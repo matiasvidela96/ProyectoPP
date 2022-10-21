@@ -1,4 +1,4 @@
-package proyectopp;
+package Clases;
 
 public class GearBox {
     private String gearBoxType;
