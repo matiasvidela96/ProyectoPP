@@ -7,6 +7,7 @@ public class Tire {
     public Tire(float width, float airPressur) {
         this.width = width;
         this.airPressur = airPressur;
+        System.out.println("Se creo una instancia de Tire");
     }
     
 }

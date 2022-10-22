@@ -11,6 +11,7 @@ public class Wheel {
         this.brake = brake;
         this.suspension = suspension;
         this.tire = tire;
+        System.out.println("Se creo una instancia de Wheel");
     }
     
     

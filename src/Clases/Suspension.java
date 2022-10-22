@@ -7,6 +7,7 @@ public class Suspension {
     public Suspension(float springRate, Wheel wheel) {
         this.springRate = springRate;
         this.wheel = wheel;
+        System.out.println("Se creo una instancia de Suspension");
     }
     
 }

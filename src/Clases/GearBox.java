@@ -11,6 +11,7 @@ public class GearBox {
         this.gearRatio = gearRatio;
         this.Currentgear = Currentgear;
         this.car = car;
+        System.out.println("Se creo una instancia de GearBox");
     }
     
     

@@ -9,6 +9,7 @@ public class Brake {
     public Brake(String type, Car car) {
         this.type = type;
         this.car = car;
+        System.out.println("Se creo una instancia de Brake");
     }
     
     

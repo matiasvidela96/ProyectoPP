@@ -23,6 +23,7 @@ public class Car {
         this.gearBox = gearBox;
         this.suspension = suspension;
         this.brake = brake;
+        System.out.println("Se creo una instancia de Car");
     }
     
     
