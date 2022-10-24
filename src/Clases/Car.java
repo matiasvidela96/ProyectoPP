@@ -12,19 +12,22 @@ public class Car {
     private GearBox gearBox;
     private LinkedHashSet<Suspension> suspension;
     private LinkedHashSet<Brake> brake;
-
-    public Car(int registrationNo, String model, int year, int licenseNumber, Engine engine, Body body, GearBox gearBox, LinkedHashSet<Suspension> suspension, LinkedHashSet<Brake> brake) {
+    static int contador = 0;
+   
+    public Car(int registrationNo, String model, int year, int licenseNumber) throws ErrorObjeto{
         this.registrationNo = registrationNo;
         this.model = model;
         this.year = year;
         this.licenseNumber = licenseNumber;
-        this.engine = engine;
-        this.body = body;
-        this.gearBox = gearBox;
-        this.suspension = suspension;
-        this.brake = brake;
+        contador++;
+        if (contador>2) {
+            throw new ErrorObjeto(this.getClass().getName());
+        }
         System.out.println("Se creo una instancia de Car");
+        
     }
+    
+    
     
     
     public void moveForward(){
